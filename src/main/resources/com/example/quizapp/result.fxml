@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="551.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizapp.resultController">
+   <children>
+      <Label layoutX="350.0" layoutY="57.0" text="Result" textFill="#4a1917">
+         <font>
+            <Font name="Franklin Gothic Heavy Italic" size="49.0" />
+         </font>
+      </Label>
+      <Label fx:id="remarks" layoutX="149.0" layoutY="138.0" text="Very good!!This is your hard work and dedication " textFill="#3c1009" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="marks" layoutX="78.0" layoutY="251.0" prefHeight="136.0" prefWidth="165.0" style="-fx-background-color: #681b1b; -fx-background-radius: 16px; -fx-border-radius: 16px;" text="/10" textFill="#f8e6e6">
+         <font>
+            <Font name="Georgia Bold" size="36.0" />
+         </font>
+         <padding>
+            <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+         </padding>
+      </Label>
+      <ProgressIndicator fx:id="correct_progress" layoutX="343.0" layoutY="251.0" prefHeight="136.0" prefWidth="155.0" progress="0.8" style="-fx-progress-color: #156837; -fx-background-color: #83cc91; -fx-background-radius: 15px; -fx-font-weight: 90px;" />
+      <ProgressIndicator fx:id="wrong_progress" layoutX="580.0" layoutY="251.0" prefHeight="136.0" prefWidth="155.0" progress="0.2" style="-fx-progress-color: #ff0000; -fx-background-color: #eea7a7; -fx-background-radius: 15px; -fx-font-weight: 90px;" />
+      <Label fx:id="marktext" layoutX="82.0" layoutY="422.0" text=" mark scored" textFill="#6f2525">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="wrongtext" layoutX="571.0" layoutY="422.0" text="Incorrect answer: 2" textFill="#e12828">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="correcttext" layoutX="327.0" layoutY="422.0" text="Correct answer: 8" textFill="#256e2e">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
